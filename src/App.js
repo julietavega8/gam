@@ -1,25 +1,40 @@
 import logo from './logo.svg';
 import './App.css';
+import Button from './Components';
 
 function App() {
+  const handleClick = () => {
+    alert('guardar');
+  }
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+          te damos la
+          </p>
+        <button text="cancelar" onClick={()=> alert('Hicieron click')}></button>
+        <button text="Guardar" onClick={handleClick}></button>
       </header>
     </div>
   );
 }
 
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
